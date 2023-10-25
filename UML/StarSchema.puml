@@ -1,0 +1,29 @@
+@startuml
+  object Time{
+    TimeID
+    Year
+    Month
+  }
+  
+  object Geografy{
+    GeografyID
+    Federal State
+  }
+  
+  object CropProduction{
+    CropProductionID
+    TimeID
+    GeografyID
+  }
+  
+  object Crop{
+    CropID
+    CropType
+    Ammound
+  }
+  
+  CropProduction "*" -up- "1" Time
+  CropProduction "*" -left- "1" Geografy
+  CropProduction "*" -right- "1" Crop
+
+@enduml
