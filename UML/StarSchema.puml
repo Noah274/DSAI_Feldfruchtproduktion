@@ -1,12 +1,12 @@
 @startuml
-  object Time{
+  object ProductionYear{
     TimeID
     Year
-    Month
   }
   
   object Geografy{
     GeografyID
+    Country
     Federal State
   }
   
@@ -14,15 +14,17 @@
     CropProductionID
     TimeID
     GeografyID
+    CropID
+    ---
+    Ammound
   }
   
   object Crop{
     CropID
     CropType
-    Ammound
   }
   
-  CropProduction "*" -up- "1" Time
+  CropProduction "*" -up- "1" ProductionYear
   CropProduction "*" -left- "1" Geografy
   CropProduction "*" -right- "1" Crop
 

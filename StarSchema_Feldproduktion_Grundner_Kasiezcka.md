@@ -2,7 +2,7 @@
 
 ## Star Schema
 
-![Alt text](image-3.png)
+![Alt text](image-1.png)
 
 ## Faktentabelle
 
@@ -10,6 +10,6 @@
 
 ## Klassifikationstabelle
 
-* Time
+* ProductionYear
 * Geografy
 * Crop
