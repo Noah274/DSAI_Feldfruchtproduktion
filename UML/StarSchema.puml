@@ -7,25 +7,23 @@
   object Geografy{
     GeografyID
     Country
-    Federal State
   }
   
   object CropProduction{
     CropProductionID
     TimeID
     GeografyID
-    CropID
     ---
-    Ammound
-  }
-  
-  object Crop{
-    CropID
-    CropType
+    Wheat
+    Barley
+    Grain Corn inc. CCM
+    Potatoes
+    Sugarbeet
+    Rapeseed and Turnips
+    Soybeans
   }
   
   CropProduction "*" -up- "1" ProductionYear
   CropProduction "*" -left- "1" Geografy
-  CropProduction "*" -right- "1" Crop
 
 @enduml

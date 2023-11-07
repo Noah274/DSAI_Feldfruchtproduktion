@@ -1,0 +1,5 @@
+Benutzter: ws_if200136
+Liste der Tabellen:
+	* PRODUCTION_YEAR
+	* GEOGRAFY
+	* CROPPRODUCTION
